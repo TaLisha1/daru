@@ -1,0 +1,698 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: 'Mont';
+    src: url(../fonts/Mont-Regular.woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url(../fonts/Mont-SemiBold.woff);
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url(../fonts/Mont-Bold.woff);
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Regular.woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Medium.woff);
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Semibold.woff);
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Bold.woff);
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Глобальные стили */
+
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* отступы не наследуются, применяются только к боди */
+    margin: 0; 
+    padding: 0;
+
+    /* наследуется для всего документа */
+    font-family: 'SFProDisplay', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #6A7C95;
+    line-height: 28px;
+
+    background-color: #11161E;
+    box-sizing: border-box;
+    min-width: 1920px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.visualy-hidden {
+    display: none;
+}
+
+
+
+/* Основное  */
+
+.main-nav {
+    
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.container_header {
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+
+
+.site-nav a, 
+.user-nav a {
+    color: rgba(118, 134, 159, 0.80);
+    transition: 0.5s;
+}
+
+li .enter {
+    color: #5CA35B;
+}
+
+
+.site-nav a:hover, 
+.user-nav a:hover,
+.site-nav a:focus, 
+.user-nav a:focus {
+    color: #FFF;
+}  
+
+.create-page-slogan {
+    color: #FFF;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 63px;
+}
+
+.create-page-call {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.button {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #FFF;
+    width: 262px;
+    height: 49px;
+    text-align: center;
+    background-color: #5CA35B;
+    transition: 0.5s;
+    border-radius: 15px;
+    padding-top: 6px;
+    
+
+}
+
+.button:hover,
+.button:focus {
+    color:#6A7C95;
+    background-color: #212a38;
+}
+
+
+
+.contacts {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.contacts-tel a,
+.contacts-mail a {
+    color: rgba(118, 134, 159, 0.80);
+    transition: 0.5s;
+    
+}
+
+.contacts-tel a:hover,
+.contacts-mail a:hover,
+.contacts-tel a:focus,
+.contacts-mail a:focus {
+    color: #FFF;
+}
+
+.contacts-icons {
+    width: 42px;
+    height: 34px;
+}
+
+
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.benefits {
+    width: 100%;
+    background-color: #181F29;
+}
+
+.benefits-item {
+    background-color: #273140;
+    text-align: center;
+}
+
+.item-icon {
+    width: 91px;
+    height: 91px;
+
+}
+
+.benefits-title {
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFF;
+
+}
+
+.benefits-item p {
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #717E92;
+}
+
+.possibilities-icon {
+    display: flex;
+    width: 590px;
+   
+}
+
+.possibilities-link {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-1 {
+    background-image: url(../img/pos1.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 65px;
+    
+}
+
+.item-2 {
+    background-image: url(../img/pos2.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+}
+
+.item-3 {
+    background-image: url(../img/pos3.png);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 53px;
+}
+
+
+.facilities {
+    width: 100%;
+    background-color: #181F29;
+}
+
+.facilities-button {
+    background-color: #212a38;
+    color: #6A7C95;
+    line-height: 30px;
+}
+
+.facilities-button:hover,
+.facilities-button:focus {
+    background-color: #5CA35B;
+    color: #FFF;
+}
+
+.facilities-images {
+    background-image: 
+    url(../img/maximg.png);
+    background-repeat: no-repeat;
+}
+
+
+.rates-title {
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+}
+
+.rates-main-title {
+    font-family: 'SFProDisplay', 'Arial', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    
+}
+
+.rates-item {
+    background-color: #273140;
+}
+
+.tarif {
+    text-align: center;
+}
+
+.rates-list-item li {
+    list-style-type: disc;
+}
+
+.rates-list-item span {
+    color: #3B485A;
+}
+
+.rates-button-alt {
+    background-color: #6a7395;
+}
+
+.rates-button-comand {
+    background-color: #6a9590;
+}
+
+.rates-button-delit {
+    background-color: #95936a;
+}
+
+.updates {
+    width: 100%;
+    background-color: #181F29;
+}
+
+.social {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+}
+
+.social-link {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+
+.social-link-tg {
+    background-image: url(../img/telegramm.svg);
+    background-repeat: no-repeat;
+}
+
+.social-link-vk {
+    background-image: url(../img/vk.svg);
+    background-repeat: no-repeat;
+}
+
+.social-link-inst {
+    background-image: url(../img/instagramm.svg);
+    background-repeat: no-repeat;
+}
+
+.social-link-fb {
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-item a {
+    color: #2D3746;
+    font-size: 12px;
+    line-height: 15px;
+    transition: 0.5s;
+}
+
+.footer-item a:hover,
+.footer-item a:focus {
+    color: #FFF;
+}
+
+/* ----сеточные стили ---- */
+
+.container_header {
+    min-width: 1245px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.main-nav {
+    display: flex;
+    margin-top: 94px;
+    min-width: 1245px;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.site-nav, 
+.user-nav {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    min-width: 455px;
+}
+
+.site-nav {
+    min-width: 425px;
+}
+
+.site-nav li:not(:last-of-type),
+.user-nav li:not(:last-of-type) {
+    margin-right: 65px;
+}
+
+.main-logo {
+    width: 34px;
+    height: 53px;
+    order: 2;
+    margin-right: 80px;
+}
+
+.user-nav {
+    order: 3;
+}
+
+.container_new-page {
+    width: 1245px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.create-page {
+    display: flex;
+    width: 1245px;
+    padding-top: 80px;
+    margin-bottom: 165px;
+}
+
+.create-page-slogan {
+    margin: 0;
+}
+
+.create-page-call {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    width: 435px;
+    height: 60px;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 36px;
+    margin-bottom: 150px;
+}
+
+.contacts-tel,
+.contacts-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.container-benefits {
+    width: 1245px;
+    margin: 0 auto;
+    padding: 160px 10px;
+}
+
+.benefits-title {
+    margin: 0;
+    line-height: 50px;
+}
+
+.benefits-descr {
+    width: 753px;
+    margin-top: 5px;
+}
+
+.benefits-list {
+    padding: 0;
+    margin-top: 55px;
+    display: flex;
+    width: 1140px;
+    gap: 95px;
+    
+}
+
+.benefits-item {
+    flex-basis: 317px;
+    height: 340px;
+    padding-top: 39px;
+    padding-bottom: 50px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-radius: 25px;
+}
+
+.possibilities_container {
+    width: 1245px;
+    min-height: 544px;
+    margin: 0 auto;
+    padding: 130px 10px 165px 10px;
+}
+
+.possibilities-title {
+    margin: 0;
+}
+
+.possibilities_container p {
+    margin-top: 20px;
+    margin-bottom: 55px;
+    width: 600px;
+}
+
+.possibilities-icon {
+    display: flex;
+    width: 590px;
+    height: 65px;
+    padding: 0;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.item-kaspi {
+    width: 72px;
+}
+
+.item-1c {
+    width: 92px;
+}
+
+.item-kazpost {
+    width: 375px;
+}
+
+.facilities_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1245px;
+    height: 509px;
+    margin: 0 auto;
+    padding: 125px 10px 0 10px;
+}
+
+.facilities-title {
+    margin: 0;
+
+}
+
+.facilities_container p {
+    margin-top: 20px;
+    margin-bottom: 38px;
+    max-width: 565px;
+}
+
+.facilities-images {
+    background-image: url(../img/Group\ 2.png);
+    width: 590px;
+}
+
+.rates-container {
+    width: 1245px;
+    margin: 0 auto;
+    padding: 130px 10px 170px 10px;
+}
+
+.rates-main-title {
+    margin: 0;
+    text-align: start;
+}
+
+.rates-descr {
+    max-width: 514px;
+    margin-bottom: 40px;
+}
+
+.rates-list {
+    display: flex;
+    padding: 0;
+    gap: 106px;
+}
+
+.rates-item {
+    flex-basis: 317px;
+    border-radius: 15px;
+    min-height: 437px;
+}
+
+.updates_container {
+    width: 1245px;
+    margin: 0 auto;
+    min-height: 465px;
+    padding: 135px 10px 115px 10px;
+}
+
+.updates-title {
+    margin: 0;
+}
+
+.updates_container p {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    width: 530px;
+}
+
+.footer {
+    width: 1245px;
+    margin: 0 auto;
+}
+
+.footer-list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list .footer-item-logo {
+    display: flex;
+    width: 165px;
+    gap: 17px;
+}
+
+.footer-item-logo img {
+    align-self: center;
+    width: 22px;
+    height: 34px;
+
+}
+
+.footer-item-text {
+    color: #2D3746;
+
+font-family: SF Pro Display;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px;
+align-self: center;
+}
+
+.rates-item {
+    padding: 48px 36px;
+    width: 317px;
+    min-height: 437px;
+}
+
+.rates-title {
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+.tarif {
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.rates-list-item {
+    color: #717E92;
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 18px;
+    width: 265px;
+    min-height: 199px;
+    line-height: 160%;
+    margin-bottom: 40px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+
+.rates-item a {
+    display: inline-block;
+    font-family: 'Mont', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 248px;
+    height: 38px;
+    padding-bottom: 40px;
+
+}
+
